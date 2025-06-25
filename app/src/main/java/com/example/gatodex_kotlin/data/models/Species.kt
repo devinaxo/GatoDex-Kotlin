@@ -1,4 +1,4 @@
-package com.example.gatodex_kotlin.data
+package com.example.gatodex_kotlin.data.models
 
 import androidx.room.Entity
 import androidx.room.Index

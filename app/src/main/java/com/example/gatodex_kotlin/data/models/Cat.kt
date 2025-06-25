@@ -1,9 +1,10 @@
-package com.example.gatodex_kotlin.data
+package com.example.gatodex_kotlin.data.models
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
+import com.example.gatodex_kotlin.data.models.Species
 
 @Entity(
     tableName = "Cats",
@@ -12,7 +13,7 @@ import androidx.room.PrimaryKey
             entity = Species::class,
             parentColumns = ["speciesId"],
             childColumns = ["species_id"],
-            onDelete = ForeignKey.RESTRICT,
+            onDelete = ForeignKey.Companion.RESTRICT,
         )
     ]
 )
